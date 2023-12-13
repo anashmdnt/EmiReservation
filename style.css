@@ -1,0 +1,92 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('image.jpg') center center fixed;
+    background-size: cover;
+    filter: contrast(0.9); /* Adjust the value to decrease or increase contrast */
+}
+
+header {
+
+    color: rgb(37, 86, 132);
+    padding: 10px;
+    text-align: center;
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav img {
+    max-height: 100px; /* Adjust the height of the logo as needed */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+form {
+  max-width: 450px;
+  margin: 22px auto;
+  padding: 55px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.reset {
+  background-color: #f44336;
+}
+
+button.reset:hover {
+  background-color: #d32f2f;
+}

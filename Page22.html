@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Restauration - Ecole Mohamadia d'Ingénieur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="#">Contact</a>
+            <a href="#">Réglement</a>
+        </div>
+        <div>
+          <img src="logo.png" alt="alternative text" width="width_in_pixels" height="height_in_pixels" />
+        </div>
+    </nav>
+
+    <header>
+        <h1>Remplire le formulaire</h1>
+    </header>
+
+    <div class="container">
+      <form action="#" id="myForm">
+        
+         <div class="form-row">
+            <div class="input-data">
+      
+               <div class="underline"></div>
+               <label for="">Nom :</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Prénom :</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Matricule :</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+   
+            </div>
+            
+         </div>
+         <label for="pet-select">Génie:</label>
+
+<select name="genie" id="genie-select">
+  <option value="">Choisire votre génie</option>
+  <option value="dog">Eléct</option>
+  <option value="cat">Mis</option>
+  <option value="hamster">Min</option>
+  <option value="parrot">Meca</option>
+  <option value="spider">RT</option>
+  <option value="goldfish">PI</option>
+  <option value="goldfish">Info</option>
+</select>
+<div class="form-row">
+<label for="promotion-select">Promotion:</label>
+
+<select name="pets" id="pet-select">
+  <option value="">Choisire votre Promotion</option>
+  <option value="dog">1ér année</option>
+  <option value="cat">2ér année</option>
+  <option value="hamster">3ér année</option>
+</select>
+</div>
+<label for="datepicker">choisire le jour d'aprés : </label>
+<input type="date" id="datepicker" name="datepicker">
+<script>
+   // Get the current date + 1 day in the format YYYY-MM-DD
+   function getTomorrowDate() {
+       const tomorrow = new Date();
+       tomorrow.setDate(tomorrow.getDate() + 1);
+
+       const year = tomorrow.getFullYear();
+       const month = (tomorrow.getMonth() + 1).toString().padStart(2, '0');
+       const day = tomorrow.getDate().toString().padStart(2, '0');
+
+       return `${year}-${month}-${day}`;
+   }
+
+   // Set the min attribute of the date input to tomorrow's date
+   document.getElementById('datepicker').min = getTomorrowDate();
+</script>
+<div class="form-row">
+   <label for="repas-select">Repas:</label>
+   
+   <select name="Repas" id="repas-select">
+     <option value="">Choisire le Repas </option>
+     <option value="dog">Petit-déjeuner </option>
+     <option value="cat">Déjeuner</option>
+     <option value="hamster">Dîner</option>
+     <option value="hamster">les trois</option>
+     <option value="hamster">Déjeuner-Diner</option>
+   </select>
+   </div>
+   <button id="validerButton">Valider</button>
+   <button id="resetButton" type="button">Réinitialiser les informations</button>
+</form>
+
+<script>
+   document.getElementById('resetButton').addEventListener('click', function() {
+       // Clear the form when the button is clicked
+       document.getElementById('myForm').reset();
+   });
+</script>
+
+      </form>
+      </div>
+
+</body>
+
+</html>
+
